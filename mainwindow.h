@@ -1,6 +1,7 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+#include "password.h"
 #include <QMainWindow>
 #include <QHBoxLayout>
 #include <QVBoxLayout>
@@ -10,6 +11,7 @@
 #include <QPushButton>
 #include <QWidget>
 #include <QButtonGroup>
+#include <QMessageBox>
 
 class MainWindow : public QMainWindow
 {
@@ -21,6 +23,8 @@ public:
 public slots:
     void validate();
 private:
+    void displayResult(bool b);
+    void refreshUi();
     QPushButton validateBtn;
     QLineEdit userIn;
     QWidget central;
@@ -36,5 +40,8 @@ private:
     QLabel stdPassLabel;
     QLabel significantDigitLabel;
     QLabel noLeadingZeroLabel;
+    QMessageBox msgBox;
+    Password pass;
+    bool valid;
 };
 #endif // MAINWINDOW_H

@@ -1,5 +1,9 @@
 C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/passwordValidation/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/passwordValidation_autogen/EWIEGA46WW/moc_mainwindow.cpp: C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/passwordValidation/mainwindow.h \
   C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/passwordValidation/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/passwordValidation_autogen/moc_predefs.h \
+  C:/Qt/6.5.3/mingw_64/include/QtCore/QChar \
+  C:/Qt/6.5.3/mingw_64/include/QtCore/QDebug \
+  C:/Qt/6.5.3/mingw_64/include/QtCore/QObject \
+  C:/Qt/6.5.3/mingw_64/include/QtCore/QString \
   C:/Qt/6.5.3/mingw_64/include/QtCore/q20memory.h \
   C:/Qt/6.5.3/mingw_64/include/QtCore/q20type_traits.h \
   C:/Qt/6.5.3/mingw_64/include/QtCore/qalgorithms.h \
@@ -147,6 +151,7 @@ C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/passwordValida
   C:/Qt/6.5.3/mingw_64/include/QtWidgets/QLabel \
   C:/Qt/6.5.3/mingw_64/include/QtWidgets/QLineEdit \
   C:/Qt/6.5.3/mingw_64/include/QtWidgets/QMainWindow \
+  C:/Qt/6.5.3/mingw_64/include/QtWidgets/QMessageBox \
   C:/Qt/6.5.3/mingw_64/include/QtWidgets/QPushButton \
   C:/Qt/6.5.3/mingw_64/include/QtWidgets/QVBoxLayout \
   C:/Qt/6.5.3/mingw_64/include/QtWidgets/QWidget \
@@ -154,6 +159,7 @@ C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/passwordValida
   C:/Qt/6.5.3/mingw_64/include/QtWidgets/qboxlayout.h \
   C:/Qt/6.5.3/mingw_64/include/QtWidgets/qbuttongroup.h \
   C:/Qt/6.5.3/mingw_64/include/QtWidgets/qcheckbox.h \
+  C:/Qt/6.5.3/mingw_64/include/QtWidgets/qdialog.h \
   C:/Qt/6.5.3/mingw_64/include/QtWidgets/qframe.h \
   C:/Qt/6.5.3/mingw_64/include/QtWidgets/qgridlayout.h \
   C:/Qt/6.5.3/mingw_64/include/QtWidgets/qlabel.h \
@@ -161,6 +167,7 @@ C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/passwordValida
   C:/Qt/6.5.3/mingw_64/include/QtWidgets/qlayoutitem.h \
   C:/Qt/6.5.3/mingw_64/include/QtWidgets/qlineedit.h \
   C:/Qt/6.5.3/mingw_64/include/QtWidgets/qmainwindow.h \
+  C:/Qt/6.5.3/mingw_64/include/QtWidgets/qmessagebox.h \
   C:/Qt/6.5.3/mingw_64/include/QtWidgets/qpushbutton.h \
   C:/Qt/6.5.3/mingw_64/include/QtWidgets/qsizepolicy.h \
   C:/Qt/6.5.3/mingw_64/include/QtWidgets/qtabwidget.h \
@@ -365,4 +372,5 @@ C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/passwordValida
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/sys/types.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/time.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h \
-  C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h
+  C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
+  C:/Users/oscar/Documents/COS3711\ AdvancedProgramming/Assignments/passwordValidation/password.h

@@ -16,7 +16,7 @@ bool Password::validStd(QString p) {
     /* length >= 5
      * Contains no spaces
      */
-    if(p.length() > 5) {
+    if(p.length() > 4) {
         if(!p.contains(' ')) {
             return true;
         }
@@ -29,7 +29,7 @@ bool Password::validSignificantDigit(QString p) {
      * 3rd is either number / alphabetical
      */
     QChar c;
-    if(p.length() > 5) {
+    if(p.length() == 5) {
         c = p.at(pos);
         if(c.isNumber() || c.isLetter()) {
             return true;
@@ -46,7 +46,7 @@ bool Password::validNoLeadingZero(QString p) {
     int length = p.length();
     if(length > 3 && length < 7) {
         c = p.at(0);
-        if(!c.isSpace()) {
+        if(c.digitValue() != 0) { /*returns -1 if not digit*/
             return true;
         }
     }

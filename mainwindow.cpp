@@ -3,6 +3,7 @@
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
 {
+    pass.setPosition(2);
     stdPassLabel.setText("Minimum 5 characters & no spaces");
     significantDigitLabel.setText("Exactly 5 characters & the third character is either number / letter");
     noLeadingZeroLabel.setText("Between 4 & 6 digits, not starting with 0");
@@ -11,7 +12,7 @@ MainWindow::MainWindow(QWidget *parent)
     noLeadingZeroCheck.setChecked(false);
     userIn.clear();
     validateBtn.setText("VALIDATE");
-    validateBtn.setDisabled(true);
+    //validateBtn.setDisabled(true);
     btnGroup.addButton(&stdPassCheck, 0);
     btnGroup.addButton(&significantDigitCheck, 1);
     btnGroup.addButton(&noLeadingZeroCheck, 2);
@@ -41,4 +42,27 @@ void MainWindow::validate() {
      * Invoke appropriate method to validate.
      * Display QMessage after
      */
+    qDebug() << "Validate";
+    valid = false;
+    if(stdPassCheck.isChecked()) {
+        qDebug() << "std";
+        valid = pass.validStd(userIn.text());
+    } else if(noLeadingZeroCheck.isChecked()) {
+        qDebug() << "zero";
+        valid = pass.validNoLeadingZero(userIn.text());
+    } else if(significantDigitCheck.isChecked()) {
+        qDebug() << "sig";
+        valid = pass.validSignificantDigit(userIn.text());
+    }
+
+    this->displayResult(valid);
+}
+
+void MainWindow::displayResult(bool b) {
+    if(valid) {
+        QMessageBox::information(this, "Success message", "Horay! Password accepted.");
+    } else {
+        QMessageBox::critical(this,"Invalid input","Oops! Password doesn't match rules.");
+    }
+
 }
